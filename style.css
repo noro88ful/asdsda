@@ -1,0 +1,1184 @@
+@font-face {
+	font-family: "Futura PT";
+	src: url("fonts/FuturaPT-Book.woff");
+}
+
+@font-face {
+	font-family: "Futura PT Bold";
+	src: url("fonts/FuturaPT-Bold.woff");
+}
+@font-face {
+	font-family: "Futura PT Medium";
+	src: url("fonts/FuturaPT-Medium.woff");
+}
+* {
+	margin: 0;
+	scroll-behavior: smooth;
+}
+html {
+
+}
+body {
+min-width: 1257px;
+
+	background-color: #E5E5E5;
+	font-family: "Futura PT";
+}
+.lv_lang {
+	display: none;
+}
+a {
+	text-decoration: none;
+	color: #FFFFFF;
+	font-size: 18px;
+}
+#up {
+	cursor: pointer;
+	position: fixed;
+	bottom: 140px;
+	width: 50px;
+	left: 90%;
+	z-index: 100;
+}
+.polosa{    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;}
+.polosalogo{left:0px;}
+.polosaadres{left:0px;}
+.socseti{left:0px;}
+#message {
+	cursor: pointer;
+	position: fixed;
+	bottom: 60px;
+	width: 50px;
+	left: 90%;
+	z-index: 100;
+}
+header {
+    width: 100%;
+    padding-top: 30px;
+    height: 100vh;
+    background: url(images/background.png);
+    background-size: cover;
+    background-position: center;
+}
+textarea, input {
+	font-family: Futura PT;
+	font-size: 16px;
+}
+#mail {
+	display: none;
+	position: fixed;
+	left: 30%;
+	top: 135px;
+	z-index: 200;
+	width: 30%;
+	height: 320px;
+	background-color: #FFFFFF;
+	padding-left: 4%;
+	padding-top: 2%;
+	padding-right: 4%;
+	padding-bottom: 25px;
+}
+#mail p#titlem {
+	text-align: center;
+	font-family: Futura PT Bold;
+	font-style: normal;
+	font-size: 26px;
+	padding-bottom: 15px;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	color: #A83040;
+	margin-top: 15px;
+}
+#mail #email {
+	width: 90%;
+	height: 40px;
+
+	background: #EFEFEF;
+	border: 0;
+	padding: 0px 15px; 
+	outline: 0;
+}
+#mail textarea {
+	width: 90%;
+	height: 80px;
+	background: #EFEFEF;
+	border: 0;
+	margin-top: 20px;
+	padding: 15px; 
+	outline: 0;
+	resize: none;
+}
+#mail button {
+	cursor: pointer;
+	background: #A83040;
+	padding: 0px 20px;	
+	font-family: Futura PT;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	text-align: center;
+	letter-spacing: 0.05em;
+	margin-left: 4%;
+	margin-top: 10px;
+	box-shadow: 0;
+	outline: 0;
+	border: 0;
+	color: #F6F6F6;
+	text-transform: uppercase;
+}
+#mail div {
+	margin-top: 0px;
+	display: grid;
+	height: 55px;
+	grid-template-columns: 4% 20% 66%;	
+	grid-column-gap: 15px;
+}
+#mail #bottomline {
+	display: grid;
+	width: 100%;
+	height: 20px;
+	grid-template-columns: 1% 40%;
+	grid-gap: 57%;
+}
+.g-recaptcha {
+	transform: scale(0.6);
+	margin-top: -30px
+}
+#mail p {
+	padding-top: 6px;
+	margin-left: -10px;
+}
+#aboutus {
+	display: none;
+	position: fixed;
+	left: 10%;
+	top: 5%;
+	justify-content: justify;
+	z-index: 200;
+	width: 76vw;
+	height: 85%;
+	background-color: #FFFFFF;
+	border-radius: 15px;
+	padding-left: 4%;
+	padding-top: 2%;
+	padding-right: 4%;
+}
+#aboutus p:nth-child(2) {
+	font-family: Futura PT Bold;
+	font-size: 16px;
+	padding-bottom: 25px;
+}
+#aboutus p {
+	font-family: Futura PT;
+	font-size: 18px;
+}
+#logo1 {
+	width: 202px;
+	height: 53px;
+	margin-top: 40px;
+}
+#cross, #cross1 {
+	position: relative;
+	margin-left: 100%;
+	cursor: pointer;
+}
+#aboutus p:nth-child(3) {
+	font-family: Futura PT Bold;
+	font-style: normal;
+	font-size: 26px;
+	padding-bottom: 10px;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	color: #A83040;
+}
+#logo img{
+	position: absolute;
+	width: 240px;
+	left: 4%;
+	top: 58px;
+}
+#adress {
+    position: absolute;
+    height: 26px;
+    margin-top: -45px;
+    margin-left: 206px;
+}
+
+#adress p {
+	padding-top: 15px;
+	font-family: "Futura PT";
+	font-style: normal;
+	font-size: 16px;
+	text-align: right;
+	letter-spacing: 0.01em;
+	color: rgba(255, 255, 255, 0.8);
+	text-shadow: 0px 4px 20px #000000;
+}
+#selectLang {
+    position: absolute;
+    padding-top: -10px;
+    top: 15px;
+    margin-left: 497px;
+}
+#selectLv {
+	margin-left: 5px;
+}
+#selectLang img {
+	cursor: pointer;
+	width: 24px;
+}
+header ul {
+    list-style: none;
+    margin-top: 20px;
+    margin-right: 132px;
+}
+header ul li {
+	display: inline;
+	padding: 0 10px;
+	font-family: Futura PT;
+	font-style: normal;
+	font-size: 16px;
+	letter-spacing: 0em;
+	color: #F6F6F6;
+	text-shadow: 0px 4px 20px #000000;
+}
+/* instagram */
+#instagram {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    margin-left: -401px;
+    top: 68px;
+}
+/* facebook */
+#facebook {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    margin-left: -360px;
+    top: 68px;
+}
+#phone {
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	top: 13.5px;
+}
+#contacts1 {
+    position: absolute;
+    width: 249px;
+    height: 52px;
+    margin-left: -291px;
+    top: 54px;
+}
+#contacts1 p#num {
+	position: absolute;
+	width: 208px;
+	height: 33px;
+	left: 16%;
+	top: 7px;
+
+	font-family: Futura PT;
+	font-style: normal;
+	font-size: 16px;
+
+	color: #F6F6F6;
+
+	text-shadow: 0px 4px 20px #000000;
+}
+#contacts1 p#time {
+
+	position: absolute;
+	width: 209px;
+	height: 23px;
+	left: 16%;
+	top: 27px;
+
+	font-family: Futura PT;
+	font-style: normal;
+	font-size: 14px;
+	letter-spacing: 0.01em;
+
+	color: rgba(255, 255, 255, 0.7);
+
+	text-shadow: 0px 4px 20px #000000;
+}
+#title0, #title {
+	width: 63%;
+	margin-bottom: 0;
+	margin-left: 4%;
+	margin-top: 100px;
+	font-family: Futura PT Bold;
+	font-style: normal;
+	font-size: 30px;
+	letter-spacing: 0.15em;
+	text-transform: uppercase;
+
+	color: #F6F6F6;
+}
+#title {
+	margin: 5px 4%;
+	padding: 0;	
+	font-size: 18px;
+}
+#title1 {
+	margin-top: 20px;
+	margin-bottom: 55px;
+	
+	margin-left: 4%;
+	font-family: Futura PT;
+	font-style: normal;
+	font-size: 20px;
+	letter-spacing: 0.03em;
+
+	color: #F6F6F6;
+
+	text-shadow: 0px 4px 20px #000000;
+}
+#details {
+	margin-bottom: 0;
+	width: 160px;
+	height: 45px;
+	margin-left: 4%;
+	cursor: pointer;
+	background: #A83040;
+
+	font-family: Futura PT;
+	font-style: normal;
+	font-size: 16px;
+	text-align: center;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	box-shadow: 0;
+	outline: 0;
+	border: 0;
+	color: #F6F6F6;
+}
+.header__scroll {
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    background-image: url(../mashina/images/but.png);
+    background-repeat: no-repeat;
+    background-size: inherit;
+    cursor: pointer;
+    height: 52px;
+    margin-bottom: 10px;
+    width: 26px;
+}
+#but {
+	display: block;
+	margin: 4% auto 0 auto;
+	height: 43px;
+}
+#avtomoika {
+	top: -80px;
+	padding-top: 120px;
+
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	text-align: center;
+	z-index: 80;
+
+}
+#avtomoikay {
+	padding-bottom: 0px;
+	padding-top: 0;
+	font-family: Futura PT Bold;
+	width: 100%;
+	font-size: 26px;
+	font-style: normal;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	color: #A83040;
+}
+#types {
+	text-align: left;
+	display: grid;
+	grid-template-columns: 6fr 1fr 1fr 1fr;
+	width: 90%;
+	margin-left: 6%;
+	font-family: Futura PT Bold;
+	font-size: 16px;
+	margin-bottom: 0px;
+}
+#types div.typesn {
+	text-align: left;
+}
+#types div {
+	font-family: Futura PT Bold;
+	color: #000000;
+	font-style: normal;
+	font-size: 16px;
+	letter-spacing: 0.03em;
+	color: #000000;
+}
+#types div {
+	text-align: center;
+	line-height: 35px;
+}
+.container-fluid {
+    margin: 0 auto;
+    width: 1305px;
+}
+#types #typesp p {
+	text-align: left;
+	font-style: normal;
+	font-size: 16px;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	font-family: Futura PT Bold;
+	color: #3052A8;
+	padding-top: 40px;
+}
+#types span {
+	font-family: Futura PT;
+	line-height: 30px;
+}
+#shinomontazh {
+padding-top: 116px;
+    margin-top: -43px !important;
+    padding-bottom: 100px;
+    text-align: center;
+    background: url(images/shinomontazh.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 64px;
+    font-family: Futura PT Bold;
+    font-style: normal;
+    font-size: 26px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #A83040;
+}
+#shinomontazh p:nth-child(2), #shinomontazh p:nth-child(4) {
+	font-family: Futura PT;
+	font-style: normal;
+	font-size: 18px;
+	width: 100%;
+	padding-top: 10px;
+	letter-spacing: 0.03em;
+	color: #FFFFFF;
+}
+#stypes table {
+	width: 90%;
+	margin-left: 8%;
+	margin-top: 40px;
+	text-align: left;
+	font-family: Futura PT Bold;
+	font-style: normal;
+	font-size: 18px;
+	letter-spacing: 0.03em;
+	color: #FFFFFF;
+}
+#stypes tr {
+	line-height: 40px;
+}
+#stypes tr td:nth-child(2) {
+	padding-right: 200px;
+}
+#stypes td {
+	padding-right: 60px;
+  
+}
+.stypesn {
+	font-family: Futura PT Bold;
+	font-style: normal;
+	font-size: 15px;
+	line-height: 20px;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	color: #4579FF;
+}
+#d_offers {
+	width: 100%;
+}
+#d_offers p {
+	font-family: Futura PT Bold;
+	font-style: normal;
+	font-size: 26px;
+	text-align: center;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	margin-top: 40px;
+margin-bottom: -65px;
+	color: #A83040;
+}
+#d_offersy {
+	font-size: 18px;
+}
+#otable {
+	text-align: right;
+	margin-top: 89px;
+	margin-left: 6%;
+	width: 90%;
+	font-family: Futura PT Bold;
+	font-style: normal;
+	font-size: 18px;
+	letter-spacing: 0.03em;
+	color: #000000;
+	padding-bottom: 30px;
+}
+#otable td {
+	line-height: 35px;
+	vertical-align: top;
+}
+#otable tr td:first-child {
+	text-align: left;
+	width: 65%;
+	padding-right: 90px;
+}
+#otable tr td:last-child {
+	padding-right: 3%; 
+}
+#otable span {
+	font-family: Futura PT;
+	letter-spacing: 0.03em;
+}
+#specialoffers {
+	position: relative;
+	width: 100%;
+	z-index: 10;
+	padding-top: 110px;
+	background-image: url("images/spoffersbg.png");
+	padding-bottom: 160px;
+	height: 570px;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+#specialoffersy p {
+	width: 100%;
+	font-family: Futura PT Bold;
+	font-style: normal;
+	font-size: 26px;
+	padding-bottom: 20px;
+	text-align: center;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	color: #A83040;
+}
+#sp_offers {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	width: 93%;
+	height: 500px;
+	margin-right: 4%;
+	margin-top: 20px;
+	margin-left: 4%;
+	color: #FFFFFF;
+	grid-column-gap: 20px;
+	box-sizing: border-box;
+}
+#sp_offers button {
+	background: #A83040;
+	margin-top: 0px;
+	padding: 7px 37px;
+	margin-left: -0.5%;
+	margin-right: -0.5%;	
+	font-family: Futura PT;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 40px;
+	text-align: center;
+	letter-spacing: 0.05em;
+	box-shadow: 0;
+	outline: 0;
+	border: 0;
+	color: #F6F6F6;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+#sp_offers div p {
+	text-transform: uppercase;
+	font-family: Futura PT Bold;
+	font-style: normal;
+	font-size: 26px;
+	line-height: 40px;
+	letter-spacing: 0.06em;
+	color: #FFFFFF;
+	text-shadow: 0px 0px 50px rgba(0, 0, 0, 0.3);
+}
+#sp_offers div#sp_offer2 {
+	background-image: url("images/sp_offer2.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	line-height: 40px;
+	padding-top: 225px;
+	padding-right: 40px; 
+	padding-left: 40px;
+}
+#sp_offer2 p {
+	text-align: right;
+}
+#sp_offers div#sp_offer1 {
+	background-image: url("images/sp_offer1.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding-top: 225px;
+	padding-left: 40px; 
+	padding-left: 40px;
+}
+#sp_offer1 p {
+	text-align: left;
+}
+#det1, #det2 {
+	position: absolute;
+	top: 600px;
+}
+#det1 {
+	position: absolute;
+	top: 600px;
+	left: 100px;
+}
+#det2 {
+	right: 84px;
+}
+#sotrud {
+	text-align: center;
+
+	margin-right: auto;
+	margin-left: auto;
+}
+#sotrud h6, #photos p, p#contacts {
+	font-family: Futura PT Bold;
+	font-style: normal;
+	font-size: 26px;
+	line-height: 40px;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	color: #A83040;
+}
+p#contacts {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#sotrud p {
+	font-family: Futura PT Bold;
+	font-size: 18px;
+	margin-top: 10px;
+	line-height: 30px;
+	letter-spacing: 0.03em;
+	color: #000000;
+
+}
+#photos {
+
+	background-image: url("images/photos.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	text-align: center;
+	padding-top: 90px;
+	padding-left: 0px;
+	padding-bottom: 10px;
+}
+#photos img {
+	height: 19vw;
+	padding: 5px;
+	cursor: pointer;
+}
+#photos button {
+	background: #A83040;
+	margin-top: 0px;
+	padding: 7px 37px;
+	font-family: Futura PT;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 40px;
+	text-align: center;
+	letter-spacing: 0.05em;
+	box-shadow: 0;
+	outline: 0;
+	border: 0;
+	color: #F6F6F6;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+#photos p:first-child {
+	font-size: 29px;
+	padding-bottom: 20px;
+}
+footer {
+	padding-top: 70px;
+	padding-left: 8%;
+	background-image: url("images/footerbg.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+#footerinfo {
+	text-align: left;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	width: 90%;
+}
+#footerinfo div p#zaglav {
+	font-family: Futura PT Bold;
+	font-style: normal;
+	font-size: 18px;
+	line-height: 50px;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+
+	color: rgba(255, 255, 255, 0.5);
+}
+#footerinfo div {
+	padding-right: 5%;
+}
+#footerinfo p {
+	font-family: Futura PT;
+	font-style: normal;
+	font-size: 18px;
+	color: #FFFFFF;
+}
+#footerinfo p {
+	padding-bottom: 12px;
+}
+#fnum {
+	margin-top: 3px;
+}
+#fmail {
+    margin-top: 0px;
+}
+#footerinfo div:last-child {
+	text-align: right;
+}
+#footerinfo div:nth-child(3) img {
+	margin-right: 10px;
+}
+#footinst {
+	margin-right: 15px;
+}
+footer p {
+	line-height: 20px;
+	font-family: Futura PT;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 5px;
+	color: #FFFFFF;
+}
+#footbot {
+	padding-bottom: 20px;
+	padding-top: 30px;
+	font-size: 18px;
+}
+@media (max-device-width:978px){
+	header{
+		height: 600px;
+	}
+}
+@media screen and (min-device-width: 1001px) and (max-device-width:1100px) { 
+
+}
+@media screen and (min-device-width: 901px) and (max-device-width:1000px) { 
+
+#types div {
+    font-family: Futura PT Bold;
+    color: #000000;
+    font-style: normal;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    color: #000000;
+}
+
+#footbot {
+    padding-bottom: 20px;
+    padding-top: 30px;
+    font-size: 14px;
+}
+}
+@media screen and (min-device-width: 801px) and (max-device-width:900px) { 
+
+#types div {
+    font-family: Futura PT Bold;
+    color: #000000;
+    font-style: normal;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    color: #000000;
+}
+
+#footbot {
+    padding-bottom: 20px;
+    padding-top: 30px;
+    font-size: 14px;
+}
+#mail {
+    display: none;
+    position: fixed;
+    left: 30%;
+    top: 23px;
+    z-index: 200;
+    width: 30%;
+    height: 320px;
+    background-color: #FFFFFF;
+    padding-left: 4%;
+    padding-top: 2%;
+    padding-right: 4%;
+    padding-bottom: 25px;
+}
+}
+@media screen and (min-device-width: 751px) and (max-device-width:800px) { 
+
+#types div {
+    font-family: Futura PT Bold;
+    color: #000000;
+    font-style: normal;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    color: #000000;
+}
+
+#footbot {
+    padding-bottom: 20px;
+    padding-top: 30px;
+    font-size: 14px;
+}
+#mail {
+    display: none;
+    position: fixed;
+    left: 30%;
+    top: 23px;
+    z-index: 200;
+    width: 30%;
+    height: 320px;
+    background-color: #FFFFFF;
+    padding-left: 4%;
+    padding-top: 2%;
+    padding-right: 4%;
+    padding-bottom: 25px;
+}
+}
+@media screen and (min-device-width: 701px) and (max-device-width:750px) { 
+
+#types div {
+    font-family: Futura PT Bold;
+    color: #000000;
+    font-style: normal;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    color: #000000;
+}
+
+#footbot {
+    padding-bottom: 20px;
+    padding-top: 30px;
+    font-size: 14px;
+}
+#mail {
+    display: none;
+    position: fixed;
+    left: 30%;
+    top: 23px;
+    z-index: 200;
+    width: 30%;
+    height: 320px;
+    background-color: #FFFFFF;
+    padding-left: 4%;
+    padding-top: 2%;
+    padding-right: 4%;
+    padding-bottom: 25px;
+}
+}
+@media screen and (min-device-width: 601px) and (max-device-width:700px) { 
+
+#types div {
+    font-family: Futura PT Bold;
+    color: #000000;
+    font-style: normal;
+    font-size: 12px;
+    letter-spacing: 0.03em;
+    color: #000000;
+}
+
+#footbot {
+    padding-bottom: 20px;
+    padding-top: 30px;
+    font-size: 12px;
+}
+#mail {
+    display: none;
+    position: fixed;
+    left: 30%;
+    top: 23px;
+    z-index: 200;
+    width: 30%;
+    height: 320px;
+    background-color: #FFFFFF;
+    padding-left: 4%;
+    padding-top: 2%;
+    padding-right: 4%;
+    padding-bottom: 25px;
+}
+}
+@media screen and (min-device-width: 501px) and (max-device-width:600px) { 
+#sotrud h6, #photos p, p#contacts {
+    font-family: Futura PT Bold;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 40px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #A83040;
+}
+#mail {
+    display: none;
+    position: fixed;
+    left: 30%;
+    top: 23px;
+    z-index: 200;
+    width: 30%;
+    height: 320px;
+    background-color: #FFFFFF;
+    padding-left: 4%;
+    padding-top: 2%;
+    padding-right: 4%;
+    padding-bottom: 25px;
+}
+#photos p:first-child {
+    font-size: 12px;
+    padding-bottom: 20px;
+}
+#otable {
+    text-align: right;
+    margin-top: 30px;
+    margin-left: 6%;
+    width: 90%;
+    font-family: Futura PT Bold;
+    font-style: normal;
+    font-size: 28px;
+    letter-spacing: 0.03em;
+    color: #000000;
+    padding-bottom: 30px;
+}
+#shinomontazh {
+    padding-top: 116px;
+    margin-top: -43px !important;
+    padding-bottom: 100px;
+    text-align: center;
+    background: url(images/shinomontazh.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 64px;
+    font-family: Futura PT Bold;
+    font-style: normal;
+    font-size: 10px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #A83040;
+}
+
+#types div {
+    font-family: Futura PT Bold;
+    color: #000000;
+    font-style: normal;
+    font-size: 10px;
+    letter-spacing: 0.03em;
+    color: #000000;
+}
+
+#footbot {
+    padding-bottom: 20px;
+    padding-top: 30px;
+    font-size: 10px;
+}
+}
+@media screen and (min-device-width: 401px) and (max-device-width:500px) { 
+#sotrud h6, #photos p, p#contacts {
+    font-family: Futura PT Bold;
+    font-style: normal;
+    font-size: 9.5px;
+    line-height: 40px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #A83040;
+}
+.stypesn {
+    font-family: Futura PT Bold;
+    font-style: normal;
+    font-size: 14px;
+ 
+    line-height: 20px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #4579FF;
+}
+#sotrud a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 11px;
+}
+
+#types #typesp p {
+    text-align: left;
+    font-style: normal;
+    font-size: 12px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    font-family: Futura PT Bold;
+    color: #3052A8;
+    padding-top: 40px;
+}
+
+#photos p:first-child {
+    font-size: 9.5px;
+    padding-bottom: 20px;
+}
+#otable {
+    text-align: right;
+    margin-top: 30px;
+    margin-left: 6%;
+    width: 90%;
+    font-family: Futura PT Bold;
+    font-style: normal;
+    font-size: 21.5px;
+    letter-spacing: 0.03em;
+    color: #000000;
+    padding-bottom: 30px;
+}
+#shinomontazh {
+    padding-top: 116px;
+    margin-top: 42px !important;
+    padding-bottom: 100px;
+    text-align: center;
+    background: url(images/shinomontazh.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 64px;
+    font-family: Futura PT Bold;
+    font-style: normal;
+    font-size: 10px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #A83040;
+}
+#sotrud p {
+    font-family: Futura PT Bold;
+    font-size: 9px;
+    margin-top: 10px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    color: #000000;
+}
+#types div {
+    font-family: Futura PT Bold;
+    color: #000000;
+    font-style: normal;
+    font-size: 9px;
+    letter-spacing: 0.03em;
+    color: #000000;
+}
+
+
+#footbot {
+    padding-bottom: 20px;
+    padding-top: 30px;
+    font-size: 10px;
+}
+}
+@media screen and (min-device-width: 300px) and (max-device-width:400px) { 
+#sotrud h6, #photos p, p#contacts {
+    font-family: Futura PT Bold;
+    font-style: normal;
+    font-size: 9.5px;
+    line-height: 40px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #A83040;
+}
+.stypesn {
+    font-family: Futura PT Bold;
+    font-style: normal;
+    font-size: 14px;
+    
+    line-height: 20px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #4579FF;
+}
+
+#sotrud a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 11px;
+}
+
+#types #typesp p {
+    text-align: left;
+    font-style: normal;
+    font-size: 12px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    font-family: Futura PT Bold;
+    color: #3052A8;
+    padding-top: 40px;
+}
+#sotrud p {
+    font-family: Futura PT Bold;
+    font-size: 9px;
+    margin-top: 9px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    color: #000000;
+}
+#photos p:first-child {
+    font-size: 9.5px;
+    padding-bottom: 20px;
+}
+#otable {
+    text-align: right;
+    margin-top: 30px;
+    margin-left: 6%;
+    width: 90%;
+    font-family: Futura PT Bold;
+    font-style: normal;
+    font-size: 21.5px;
+    letter-spacing: 0.03em;
+    color: #000000;
+    padding-bottom: 30px;
+}
+#shinomontazh {
+    padding-top: 116px;
+    margin-top: 42px !important;
+    padding-bottom: 100px;
+    text-align: center;
+    background: url(images/shinomontazh.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 64px;
+    font-family: Futura PT Bold;
+    font-style: normal;
+    font-size: 10px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #A83040;
+}
+#types div {
+    font-family: Futura PT Bold;
+    color: #000000;
+    font-style: normal;
+    font-size: 9px;
+    letter-spacing: 0.03em;
+    color: #000000;
+}
+
+
+
+#footbot {
+    padding-bottom: 20px;
+    padding-top: 30px;
+    font-size: 10px;
+}
+}
